@@ -1,0 +1,11 @@
+const express = require('express');
+const router = express.Router();
+const { auth, permit } = require('../middleware/auth');
+const { stats, listUsers, updateUser, deactivateUser, listAdminOrders } = require('../controllers/adminController');
+router.use(auth, permit('admin'));
+router.get('/stats', stats);
+router.get('/users', listUsers);
+router.put('/users/:id', updateUser);
+router.delete('/users/:id', deactivateUser);
+router.get('/orders', listAdminOrders);
+module.exports = router;

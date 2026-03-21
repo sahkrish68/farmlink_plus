@@ -1,0 +1,11 @@
+const express = require('express');
+const router = express.Router();
+const { auth } = require('../middleware/auth');
+const { placeOrder, listOrders, getOrder, updateOrderStatus, cancelOrder } = require('../controllers/orderController');
+router.use(auth);
+router.post('/', placeOrder);
+router.get('/', listOrders);
+router.get('/:id', getOrder);
+router.put('/:id/status', updateOrderStatus);
+router.delete('/:id', cancelOrder);
+module.exports = router;

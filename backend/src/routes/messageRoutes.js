@@ -1,0 +1,10 @@
+const express = require('express');
+const router = express.Router();
+const { auth } = require('../middleware/auth');
+const { inbox, thread, send, unreadCount } = require('../controllers/messageController');
+router.use(auth);
+router.get('/inbox', inbox);
+router.get('/thread/:userId', thread);
+router.post('/', send);
+router.get('/unread-count', unreadCount);
+module.exports = router;
