@@ -1,3 +1,49 @@
-[00:00:00.931] Server  LOG     ✓ Ready in 659ms
-[00:00:09.370] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:13.251] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:03.815] Server  LOG     ✓ Ready in 2.7s
+[00:00:16.663] Server  WARN    ⚠ Cross origin request detected from 192.168.0.11 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:00:16.743] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:19.297] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:00:40.462] Server  LOG     ✓ Compiled in 247ms
+[00:03:53.222] Server  LOG     ✓ Compiled in 59ms
+[00:12:26.666] Server  LOG     ✓ Compiled in 71ms
+[00:12:39.204] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:27.793] Browser ERROR   Fetch failed: {}
+[00:13:27.793] Browser ERROR   Tried URL: http://localhost:5001/api/auth/login
+[00:13:38.915] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:14:28.312] Server  LOG     ✓ Compiled in 54ms
+[00:14:47.037] Browser ERROR   Fetch failed: {}
+[00:14:47.038] Browser ERROR   Tried URL: http://localhost:5001/api/auth/login
+[00:16:53.228] Browser ERROR   Fetch failed: {}
+[00:16:53.228] Browser ERROR   Tried URL: http://localhost:5001/api/auth/login
+[00:16:54.208] Browser ERROR   Fetch failed: {}
+[00:16:54.209] Browser ERROR   Tried URL: http://localhost:5001/api/auth/login
+[00:16:54.581] Browser ERROR   Fetch failed: {}
+[00:16:54.581] Browser ERROR   Tried URL: http://localhost:5001/api/auth/login
+[00:16:54.802] Browser ERROR   Fetch failed: {}
+[00:16:54.802] Browser ERROR   Tried URL: http://localhost:5001/api/auth/login
+[00:16:54.975] Browser ERROR   Fetch failed: {}
+[00:16:54.975] Browser ERROR   Tried URL: http://localhost:5001/api/auth/login
+[00:16:55.156] Browser ERROR   Fetch failed: {}
+[00:16:55.156] Browser ERROR   Tried URL: http://localhost:5001/api/auth/login
+[00:17:15.683] Browser ERROR   Fetch failed: {}
+[00:17:15.683] Browser ERROR   Tried URL: http://localhost:5001/api/auth/login
+[00:17:43.565] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:35.309] Browser ERROR   Fetch failed: {}
+[00:18:35.310] Browser ERROR   Tried URL: http://localhost:5001/api/auth/login
+[00:21:44.294] Server  LOG       Reload env: .env.local
+[00:21:44.501] Server  LOG     ✓ Compiled in 163ms
+[00:22:03.950] Browser ERROR   Fetch failed: {}
+[00:22:03.950] Browser ERROR   Tried URL: http://192.168.0.11:5001/auth/login
+[00:22:04.805] Browser ERROR   Fetch failed: {}
+[00:22:04.805] Browser ERROR   Tried URL: http://192.168.0.11:5001/auth/login
+[00:22:05.290] Browser ERROR   Fetch failed: {}
+[00:22:05.290] Browser ERROR   Tried URL: http://192.168.0.11:5001/auth/login
+[00:22:45.500] Server  LOG       Reload env: .env.local
+[00:22:45.935] Server  LOG     ✓ Compiled in 0ms
+[00:23:10.598] Browser ERROR   Fetch failed: {}
+[00:23:10.598] Browser ERROR   Tried URL: http://localhost:5001/api/auth/login
+[00:23:11.401] Browser ERROR   Fetch failed: {}
+[00:23:11.401] Browser ERROR   Tried URL: http://localhost:5001/api/auth/login
+[00:23:58.510] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:24:52.768] Server  LOG     ✓ Compiled in 39ms
+[00:25:47.369] Server  LOG     ✓ Compiled in 81ms

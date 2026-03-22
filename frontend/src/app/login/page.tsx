@@ -9,8 +9,7 @@ export default function LoginPage() {
   const router = useRouter();
   const [form, setForm] = useState({
     email: "",
-    password: "",
-    role: "customer",
+    password: "",    
   });
   const [msg, setMsg] = useState("");
   const [loading, setLoading] = useState(false);
@@ -84,7 +83,7 @@ export default function LoginPage() {
               />
             </div>
 
-            <div className="field">
+            {/* <div className="field">
               <label>Role</label>
               <select
                 className="select"
@@ -97,7 +96,7 @@ export default function LoginPage() {
                 <option value="industrial">Industrial</option>
                 <option value="admin">Admin</option>
               </select>
-            </div>
+            </div> */}
 
             {msg && <div className="muted">{msg}</div>}
 
