@@ -1,34 +1,35 @@
 "use client";
 
-import { FormEvent, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import AuthGuard from "@/components/AuthGuard";
 import DashboardShell from "@/components/DashboardShell";
 import PageHeader from "@/components/PageHeader";
 import { getStoredUser, productApi } from "@/lib/api";
 
+const initialForm = {
+  name: "",
+  slug: "",
+  category: "",
+  productType: "",
+  description: "",
+  quantityAvailable: "",
+  unit: "",
+  price: "",
+  minOrderQuantity: "",
+  stockStatus: "in_stock",
+  deliveryOption: "",
+  deliveryArea: "",
+  expiryDate: "",
+  city: "",
+  imageUrl: "",
+};
+
 export default function AddProductPage() {
   const router = useRouter();
   const user = getStoredUser();
 
-  const [form, setForm] = useState({
-    name: "",
-    slug: "",
-    category: "",
-    productType: "",
-    description: "",
-    quantityAvailable: "",
-    unit: "",
-    price: "",
-    minOrderQuantity: "",
-    stockStatus: "in_stock",
-    deliveryOption: "",
-    deliveryArea: "",
-    expiryDate: "",
-    city: "",
-    imageUrl: "",
-  });
-
+  const [form, setForm] = useState(initialForm);
   const [imageMode, setImageMode] = useState<"url" | "upload">("url");
   const [imageFile, setImageFile] = useState<File | null>(null);
   const [msg, setMsg] = useState("");
@@ -50,11 +51,19 @@ export default function AddProductPage() {
     if (imageMode === "upload" && imageFile) {
       return URL.createObjectURL(imageFile);
     }
-    if (imageMode === "url" && form.imageUrl.trim()) {
-      return form.imageUrl.trim();
+    if (imageMode === "url" && (form.imageUrl ?? "").trim()) {
+      return (form.imageUrl ?? "").trim();
     }
     return "";
   }, [imageMode, imageFile, form.imageUrl]);
+
+  useEffect(() => {
+    return () => {
+      if (imageMode === "upload" && previewUrl.startsWith("blob:")) {
+        URL.revokeObjectURL(previewUrl);
+      }
+    };
+  }, [imageMode, previewUrl]);
 
   const submit = async (e: FormEvent) => {
     e.preventDefault();
@@ -85,8 +94,8 @@ export default function AddProductPage() {
       fd.append("expiryDate", form.expiryDate);
       fd.append("city", form.city);
 
-      if (imageMode === "url" && form.imageUrl.trim()) {
-        fd.append("imageUrl", form.imageUrl.trim());
+      if (imageMode === "url" && (form.imageUrl ?? "").trim()) {
+        fd.append("imageUrl", (form.imageUrl ?? "").trim());
       }
 
       if (imageMode === "upload" && imageFile) {
@@ -94,6 +103,9 @@ export default function AddProductPage() {
       }
 
       await productApi.create(fd);
+      setForm(initialForm);
+      setImageFile(null);
+      setImageMode("url");
       router.push("/products/manage");
     } catch (e: any) {
       setMsg(e.message || "Failed to add product");
@@ -125,7 +137,7 @@ export default function AddProductPage() {
                   <label>Product name</label>
                   <input
                     className="input"
-                    value={form.name}
+                    value={form.name ?? ""}
                     onChange={(e) =>
                       setForm((prev) => ({
                         ...prev,
@@ -142,8 +154,10 @@ export default function AddProductPage() {
                   <label>Slug</label>
                   <input
                     className="input"
-                    value={form.slug}
-                    onChange={(e) => setForm({ ...form, slug: e.target.value })}
+                    value={form.slug ?? ""}
+                    onChange={(e) =>
+                      setForm((prev) => ({ ...prev, slug: e.target.value }))
+                    }
                     placeholder="potato"
                     required
                   />
@@ -153,8 +167,10 @@ export default function AddProductPage() {
                   <label>Category</label>
                   <input
                     className="input"
-                    value={form.category}
-                    onChange={(e) => setForm({ ...form, category: e.target.value })}
+                    value={form.category ?? ""}
+                    onChange={(e) =>
+                      setForm((prev) => ({ ...prev, category: e.target.value }))
+                    }
                     placeholder="Vegetable"
                     required
                   />
@@ -164,8 +180,13 @@ export default function AddProductPage() {
                   <label>Product type</label>
                   <input
                     className="input"
-                    value={form.productType}
-                    onChange={(e) => setForm({ ...form, productType: e.target.value })}
+                    value={form.productType ?? ""}
+                    onChange={(e) =>
+                      setForm((prev) => ({
+                        ...prev,
+                        productType: e.target.value,
+                      }))
+                    }
                     placeholder="Fresh"
                   />
                 </div>
@@ -176,9 +197,12 @@ export default function AddProductPage() {
                     className="input"
                     type="number"
                     min="0"
-                    value={form.quantityAvailable}
+                    value={form.quantityAvailable ?? ""}
                     onChange={(e) =>
-                      setForm({ ...form, quantityAvailable: e.target.value })
+                      setForm((prev) => ({
+                        ...prev,
+                        quantityAvailable: e.target.value,
+                      }))
                     }
                     placeholder="100"
                     required
@@ -189,8 +213,10 @@ export default function AddProductPage() {
                   <label>Unit</label>
                   <input
                     className="input"
-                    value={form.unit}
-                    onChange={(e) => setForm({ ...form, unit: e.target.value })}
+                    value={form.unit ?? ""}
+                    onChange={(e) =>
+                      setForm((prev) => ({ ...prev, unit: e.target.value }))
+                    }
                     placeholder="kg"
                     required
                   />
@@ -203,8 +229,10 @@ export default function AddProductPage() {
                     type="number"
                     min="0"
                     step="0.01"
-                    value={form.price}
-                    onChange={(e) => setForm({ ...form, price: e.target.value })}
+                    value={form.price ?? ""}
+                    onChange={(e) =>
+                      setForm((prev) => ({ ...prev, price: e.target.value }))
+                    }
                     placeholder="20"
                     required
                   />
@@ -216,9 +244,12 @@ export default function AddProductPage() {
                     className="input"
                     type="number"
                     min="1"
-                    value={form.minOrderQuantity}
+                    value={form.minOrderQuantity ?? ""}
                     onChange={(e) =>
-                      setForm({ ...form, minOrderQuantity: e.target.value })
+                      setForm((prev) => ({
+                        ...prev,
+                        minOrderQuantity: e.target.value,
+                      }))
                     }
                     placeholder="1"
                   />
@@ -227,25 +258,31 @@ export default function AddProductPage() {
                 <div className="field">
                   <label>Stock status</label>
                   <select
-                className="select"
-                value={form.stockStatus}
-                onChange={(e) =>
-                    setForm({ ...form, stockStatus: e.target.value })
-                }
-                >
-                <option value="in_stock">In stock</option>
-                <option value="low_stock">Low stock</option>
-                <option value="out_of_stock">Out of stock</option>
-                </select>
+                    className="select"
+                    value={form.stockStatus ?? "in_stock"}
+                    onChange={(e) =>
+                      setForm((prev) => ({
+                        ...prev,
+                        stockStatus: e.target.value,
+                      }))
+                    }
+                  >
+                    <option value="in_stock">In stock</option>
+                    <option value="low_stock">Low stock</option>
+                    <option value="out_of_stock">Out of stock</option>
+                  </select>
                 </div>
 
                 <div className="field">
                   <label>Delivery option</label>
                   <input
                     className="input"
-                    value={form.deliveryOption}
+                    value={form.deliveryOption ?? ""}
                     onChange={(e) =>
-                      setForm({ ...form, deliveryOption: e.target.value })
+                      setForm((prev) => ({
+                        ...prev,
+                        deliveryOption: e.target.value,
+                      }))
                     }
                     placeholder="Pickup / Delivery"
                   />
@@ -255,9 +292,12 @@ export default function AddProductPage() {
                   <label>Delivery area</label>
                   <input
                     className="input"
-                    value={form.deliveryArea}
+                    value={form.deliveryArea ?? ""}
                     onChange={(e) =>
-                      setForm({ ...form, deliveryArea: e.target.value })
+                      setForm((prev) => ({
+                        ...prev,
+                        deliveryArea: e.target.value,
+                      }))
                     }
                     placeholder="Bara"
                   />
@@ -268,9 +308,12 @@ export default function AddProductPage() {
                   <input
                     className="input"
                     type="date"
-                    value={form.expiryDate}
+                    value={form.expiryDate ?? ""}
                     onChange={(e) =>
-                      setForm({ ...form, expiryDate: e.target.value })
+                      setForm((prev) => ({
+                        ...prev,
+                        expiryDate: e.target.value,
+                      }))
                     }
                   />
                 </div>
@@ -279,8 +322,10 @@ export default function AddProductPage() {
                   <label>City</label>
                   <input
                     className="input"
-                    value={form.city}
-                    onChange={(e) => setForm({ ...form, city: e.target.value })}
+                    value={form.city ?? ""}
+                    onChange={(e) =>
+                      setForm((prev) => ({ ...prev, city: e.target.value }))
+                    }
                     placeholder="Bara"
                   />
                 </div>
@@ -290,22 +335,38 @@ export default function AddProductPage() {
                 <label>Description</label>
                 <textarea
                   className="textarea"
-                  value={form.description}
-                  onChange={(e) => setForm({ ...form, description: e.target.value })}
+                  value={form.description ?? ""}
+                  onChange={(e) =>
+                    setForm((prev) => ({
+                      ...prev,
+                      description: e.target.value,
+                    }))
+                  }
                   placeholder="Fresh farm potato"
                 />
               </div>
 
               <div className="card card-pad" style={{ background: "#f8fbf5" }}>
-                <h3 className="title-md" style={{ marginBottom: 8 }}>Product image</h3>
+                <h3 className="title-md" style={{ marginBottom: 8 }}>
+                  Product image
+                </h3>
                 <p className="muted" style={{ marginBottom: 16 }}>
                   Choose either image URL or local upload.
                 </p>
 
-                <div style={{ display: "flex", gap: 10, flexWrap: "wrap", marginBottom: 16 }}>
+                <div
+                  style={{
+                    display: "flex",
+                    gap: 10,
+                    flexWrap: "wrap",
+                    marginBottom: 16,
+                  }}
+                >
                   <button
                     type="button"
-                    className={`btn ${imageMode === "url" ? "btn-primary" : "btn-secondary"}`}
+                    className={`btn ${
+                      imageMode === "url" ? "btn-primary" : "btn-secondary"
+                    }`}
                     onClick={() => {
                       setImageMode("url");
                       setImageFile(null);
@@ -316,7 +377,9 @@ export default function AddProductPage() {
 
                   <button
                     type="button"
-                    className={`btn ${imageMode === "upload" ? "btn-primary" : "btn-secondary"}`}
+                    className={`btn ${
+                      imageMode === "upload" ? "btn-primary" : "btn-secondary"
+                    }`}
                     onClick={() => {
                       setImageMode("upload");
                       setForm((prev) => ({ ...prev, imageUrl: "" }));
@@ -327,35 +390,36 @@ export default function AddProductPage() {
                 </div>
 
                 {imageMode === "url" ? (
-                    <div className="field">
-                        <label>Add image URL</label>
-                        <input
-                        className="input"
-                        type="url"
-                        value={form.imageUrl || ""}
-                        onChange={(e) =>
-                            setForm((prev) => ({
-                            ...prev,
-                            imageUrl: e.target.value || "",
-                            }))
-                        }
-                        placeholder="https://example.com/product.jpg"
-                        />
-                        <div className="muted">
-                        Use a direct image link ending in .jpg, .jpeg, .png, .webp, etc.
-                        </div>
+                  <div className="field">
+                    <label>Add image URL</label>
+                    <input
+                      className="input"
+                      type="url"
+                      value={form.imageUrl ?? ""}
+                      onChange={(e) =>
+                        setForm((prev) => ({
+                          ...prev,
+                          imageUrl: e.target.value ?? "",
+                        }))
+                      }
+                      placeholder="https://example.com/product.jpg"
+                    />
+                    <div className="muted">
+                      Use a direct image link ending in .jpg, .jpeg, .png, .webp, etc.
                     </div>
-                    ) : (
-                    <div className="field">
-                        <label>Upload image from computer</label>
-                        <input
-                        className="input"
-                        type="file"
-                        accept="image/*"
-                        onChange={(e) => setImageFile(e.target.files?.[0] || null)}
-                        />
-                    </div>
-                    )}
+                  </div>
+                ) : (
+                  <div className="field">
+                    <label>Upload image from computer</label>
+                    <input
+                      className="input"
+                      type="file"
+                      accept="image/*"
+                      onChange={(e) => setImageFile(e.target.files?.[0] || null)}
+                    />
+                  </div>
+                )}
+
                 {previewUrl && (
                   <div style={{ marginTop: 16 }}>
                     <div className="muted" style={{ marginBottom: 8 }}>Preview</div>

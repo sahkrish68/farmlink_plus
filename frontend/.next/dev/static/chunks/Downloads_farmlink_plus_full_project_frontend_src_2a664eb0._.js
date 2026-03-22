@@ -173,6 +173,10 @@ const mainLinks = [
         label: "Messages"
     },
     {
+        href: "/chatbot",
+        label: "Chatbot"
+    },
+    {
         href: "/profile",
         label: "Profile"
     },
@@ -236,7 +240,7 @@ function DashboardShell({ children }) {
                                 children: "Workspace"
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                lineNumber: 59,
+                                lineNumber: 60,
                                 columnNumber: 13
                             }, this),
                             user && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -255,7 +259,7 @@ function DashboardShell({ children }) {
                                         children: user.name
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                        lineNumber: 63,
+                                        lineNumber: 64,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -263,13 +267,13 @@ function DashboardShell({ children }) {
                                         children: user.role
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                        lineNumber: 64,
+                                        lineNumber: 65,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                lineNumber: 62,
+                                lineNumber: 63,
                                 columnNumber: 15
                             }, this),
                             mainLinks.map((item)=>{
@@ -281,12 +285,12 @@ function DashboardShell({ children }) {
                                         children: item.label
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                        lineNumber: 76,
+                                        lineNumber: 77,
                                         columnNumber: 19
                                     }, this)
                                 }, item.href, false, {
                                     fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                    lineNumber: 71,
+                                    lineNumber: 72,
                                     columnNumber: 17
                                 }, this);
                             }),
@@ -297,7 +301,7 @@ function DashboardShell({ children }) {
                                         children: "Seller Tools"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 84,
                                         columnNumber: 17
                                     }, this),
                                     sellerLinks.map((item)=>{
@@ -309,12 +313,12 @@ function DashboardShell({ children }) {
                                                 children: item.label
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                                lineNumber: 93,
+                                                lineNumber: 94,
                                                 columnNumber: 23
                                             }, this)
                                         }, item.href, false, {
                                             fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                            lineNumber: 88,
+                                            lineNumber: 89,
                                             columnNumber: 21
                                         }, this);
                                     })
@@ -330,18 +334,18 @@ function DashboardShell({ children }) {
                                 children: "Logout"
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                lineNumber: 100,
+                                lineNumber: 101,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                        lineNumber: 58,
+                        lineNumber: 59,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                    lineNumber: 57,
+                    lineNumber: 58,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -349,18 +353,18 @@ function DashboardShell({ children }) {
                     children: children
                 }, void 0, false, {
                     fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                    lineNumber: 110,
+                    lineNumber: 111,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-            lineNumber: 56,
+            lineNumber: 57,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-        lineNumber: 55,
+        lineNumber: 56,
         columnNumber: 5
     }, this);
 }

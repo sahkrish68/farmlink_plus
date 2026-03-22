@@ -172,12 +172,14 @@ export const authApi = {
       body,
       auth: false,
     }),
-  login: (body: { email: string; password: string; role?: string }) =>
+
+  login: (body: { email: string; password: string }) =>
     request<{ token: string; user: User }>("/auth/login", {
       method: "POST",
       body,
       auth: false,
     }),
+
   me: () => request<{ user: User }>("/auth/me"),
 };
 

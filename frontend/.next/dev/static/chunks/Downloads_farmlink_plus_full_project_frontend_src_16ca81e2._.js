@@ -407,19 +407,13 @@ function ChatbotPage() {
     const [messages, setMessages] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([
         {
             role: "bot",
-            text: "Hello! I am Farmlink Assistant. Ask me about products, farmers, orders, delivery, or selling."
+            text: "Hello! I am your Farmlink AI assistant. Ask me about products, farmers, orders, delivery, or selling."
         }
     ]);
     const [input, setInput] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const [suggestions, setSuggestions] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([
-        "Show vegetables",
-        "Find farmers in Kathmandu",
-        "How do I place an order?",
-        "How do I add a product?"
-    ]);
-    const sendMessage = async (customText)=>{
-        const text = (customText ?? input).trim();
+    const sendMessage = async (preset)=>{
+        const text = (preset ?? input).trim();
         if (!text || loading) return;
         setMessages((prev)=>[
                 ...prev,
@@ -436,31 +430,36 @@ function ChatbotPage() {
                     ...prev,
                     {
                         role: "bot",
-                        text: res.reply || "Sorry, I could not reply right now."
+                        text: res.reply || "No reply received."
                     }
                 ]);
-            setSuggestions(res.suggestions || []);
         } catch (e) {
             setMessages((prev)=>[
                     ...prev,
                     {
                         role: "bot",
-                        text: e.message || "Chatbot is not available right now."
+                        text: e.message || "Chatbot failed."
                     }
                 ]);
         } finally{
             setLoading(false);
         }
     };
+    const quick = [
+        "Show vegetables",
+        "Find farmers in Kathmandu",
+        "How do I place an order?",
+        "How do I add a product?"
+    ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$src$2f$components$2f$AuthGuard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$src$2f$components$2f$PageHeader$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                title: "Farmlink Assistant",
-                text: "Ask about products, farmers, orders, delivery, and seller actions.",
-                badge: "CHATBOT"
+                title: "Farmlink AI Chatbot",
+                text: "Ask anything about Farmlink products, farmers, delivery, or platform usage.",
+                badge: "OPENAI"
             }, void 0, false, {
                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/chatbot/page.tsx",
-                lineNumber: 65,
+                lineNumber: 57,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$src$2f$components$2f$DashboardShell$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -474,10 +473,10 @@ function ChatbotPage() {
                             style: {
                                 display: "flex",
                                 flexDirection: "column",
-                                gap: 14,
-                                maxHeight: 430,
+                                gap: 12,
+                                maxHeight: 420,
                                 overflowY: "auto",
-                                padding: "8px 4px 16px"
+                                marginBottom: 20
                             },
                             children: [
                                 messages.map((msg, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -487,24 +486,23 @@ function ChatbotPage() {
                                         },
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             style: {
-                                                maxWidth: "75%",
+                                                maxWidth: "78%",
                                                 padding: "14px 16px",
                                                 borderRadius: 18,
-                                                background: msg.role === "user" ? "#1f6f43" : "#f4f7f2",
-                                                color: msg.role === "user" ? "#fff" : "#1d2a1f",
                                                 whiteSpace: "pre-line",
-                                                lineHeight: 1.5,
-                                                border: msg.role === "bot" ? "1px solid #dbe8d7" : "none"
+                                                background: msg.role === "user" ? "#1f6f43" : "#f3f7f1",
+                                                color: msg.role === "user" ? "#fff" : "#1b281d",
+                                                border: msg.role === "bot" ? "1px solid #d8e6d2" : "none"
                                             },
                                             children: msg.text
                                         }, void 0, false, {
                                             fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/chatbot/page.tsx",
-                                            lineNumber: 91,
+                                            lineNumber: 83,
                                             columnNumber: 17
                                         }, this)
                                     }, `${msg.role}-${index}`, false, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/chatbot/page.tsx",
-                                        lineNumber: 84,
+                                        lineNumber: 76,
                                         columnNumber: 15
                                     }, this)),
                                 loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -514,96 +512,72 @@ function ChatbotPage() {
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         style: {
-                                            maxWidth: "75%",
+                                            maxWidth: "78%",
                                             padding: "14px 16px",
                                             borderRadius: 18,
-                                            background: "#f4f7f2",
-                                            border: "1px solid #dbe8d7"
+                                            background: "#f3f7f1",
+                                            border: "1px solid #d8e6d2"
                                         },
                                         children: "Thinking..."
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/chatbot/page.tsx",
-                                        lineNumber: 110,
+                                        lineNumber: 101,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/chatbot/page.tsx",
-                                    lineNumber: 109,
+                                    lineNumber: 100,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/chatbot/page.tsx",
-                            lineNumber: 73,
+                            lineNumber: 65,
                             columnNumber: 11
                         }, this),
-                        suggestions.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             style: {
-                                marginTop: 18
+                                display: "flex",
+                                flexWrap: "wrap",
+                                gap: 10,
+                                marginBottom: 16
                             },
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "muted",
-                                    style: {
-                                        marginBottom: 10
-                                    },
-                                    children: "Quick questions"
-                                }, void 0, false, {
+                            children: quick.map((q, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    type: "button",
+                                    className: "btn btn-secondary",
+                                    onClick: ()=>sendMessage(q),
+                                    children: q
+                                }, `${q}-${i}`, false, {
                                     fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/chatbot/page.tsx",
-                                    lineNumber: 127,
+                                    lineNumber: 118,
                                     columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    style: {
-                                        display: "flex",
-                                        flexWrap: "wrap",
-                                        gap: 10
-                                    },
-                                    children: suggestions.map((item, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            type: "button",
-                                            className: "btn btn-secondary",
-                                            onClick: ()=>sendMessage(item),
-                                            children: item
-                                        }, `${item}-${index}`, false, {
-                                            fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/chatbot/page.tsx",
-                                            lineNumber: 132,
-                                            columnNumber: 19
-                                        }, this))
-                                }, void 0, false, {
-                                    fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/chatbot/page.tsx",
-                                    lineNumber: 130,
-                                    columnNumber: 15
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                                }, this))
+                        }, void 0, false, {
                             fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/chatbot/page.tsx",
-                            lineNumber: 126,
-                            columnNumber: 13
+                            lineNumber: 116,
+                            columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             style: {
                                 display: "flex",
                                 gap: 12,
-                                marginTop: 22,
-                                alignItems: "center",
-                                flexWrap: "wrap"
+                                alignItems: "center"
                             },
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                     className: "input",
                                     value: input,
                                     onChange: (e)=>setInput(e.target.value),
-                                    placeholder: "Ask something...",
+                                    placeholder: "Ask your question...",
                                     onKeyDown: (e)=>{
                                         if (e.key === "Enter") sendMessage();
                                     },
                                     style: {
-                                        flex: 1,
-                                        minWidth: 240
+                                        flex: 1
                                     }
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/chatbot/page.tsx",
-                                    lineNumber: 154,
+                                    lineNumber: 130,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -613,34 +587,34 @@ function ChatbotPage() {
                                     children: "Send"
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/chatbot/page.tsx",
-                                    lineNumber: 164,
+                                    lineNumber: 140,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/chatbot/page.tsx",
-                            lineNumber: 145,
+                            lineNumber: 129,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/chatbot/page.tsx",
-                    lineNumber: 72,
+                    lineNumber: 64,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/chatbot/page.tsx",
-                lineNumber: 71,
+                lineNumber: 63,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/chatbot/page.tsx",
-        lineNumber: 64,
+        lineNumber: 56,
         columnNumber: 5
     }, this);
 }
-_s(ChatbotPage, "6s+PPevsODZrba9FQjyQ+lMOUIY=");
+_s(ChatbotPage, "YeZnVibrulNK4lA5Gvh0rVAHAuU=");
 _c = ChatbotPage;
 var _c;
 __turbopack_context__.k.register(_c, "ChatbotPage");
