@@ -94,6 +94,10 @@ const mainLinks = [
         label: "Messages"
     },
     {
+        href: "/chatbot",
+        label: "Chatbot"
+    },
+    {
         href: "/profile",
         label: "Profile"
     },
@@ -150,7 +154,7 @@ function DashboardShell({ children }) {
                                 children: "Workspace"
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                lineNumber: 59,
+                                lineNumber: 60,
                                 columnNumber: 13
                             }, this),
                             user && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -169,7 +173,7 @@ function DashboardShell({ children }) {
                                         children: user.name
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                        lineNumber: 63,
+                                        lineNumber: 64,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -177,13 +181,13 @@ function DashboardShell({ children }) {
                                         children: user.role
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                        lineNumber: 64,
+                                        lineNumber: 65,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                lineNumber: 62,
+                                lineNumber: 63,
                                 columnNumber: 15
                             }, this),
                             mainLinks.map((item)=>{
@@ -195,12 +199,12 @@ function DashboardShell({ children }) {
                                         children: item.label
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                        lineNumber: 76,
+                                        lineNumber: 77,
                                         columnNumber: 19
                                     }, this)
                                 }, item.href, false, {
                                     fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                    lineNumber: 71,
+                                    lineNumber: 72,
                                     columnNumber: 17
                                 }, this);
                             }),
@@ -211,7 +215,7 @@ function DashboardShell({ children }) {
                                         children: "Seller Tools"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 84,
                                         columnNumber: 17
                                     }, this),
                                     sellerLinks.map((item)=>{
@@ -223,12 +227,12 @@ function DashboardShell({ children }) {
                                                 children: item.label
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                                lineNumber: 93,
+                                                lineNumber: 94,
                                                 columnNumber: 23
                                             }, this)
                                         }, item.href, false, {
                                             fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                            lineNumber: 88,
+                                            lineNumber: 89,
                                             columnNumber: 21
                                         }, this);
                                     })
@@ -244,18 +248,18 @@ function DashboardShell({ children }) {
                                 children: "Logout"
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                                lineNumber: 100,
+                                lineNumber: 101,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                        lineNumber: 58,
+                        lineNumber: 59,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                    lineNumber: 57,
+                    lineNumber: 58,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -263,18 +267,18 @@ function DashboardShell({ children }) {
                     children: children
                 }, void 0, false, {
                     fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-                    lineNumber: 110,
+                    lineNumber: 111,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-            lineNumber: 56,
+            lineNumber: 57,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/components/DashboardShell.tsx",
-        lineNumber: 55,
+        lineNumber: 56,
         columnNumber: 5
     }, this);
 }
@@ -358,26 +362,27 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_f
 ;
 ;
 ;
+const initialForm = {
+    name: "",
+    slug: "",
+    category: "",
+    productType: "",
+    description: "",
+    quantityAvailable: "",
+    unit: "",
+    price: "",
+    minOrderQuantity: "",
+    stockStatus: "in_stock",
+    deliveryOption: "",
+    deliveryArea: "",
+    expiryDate: "",
+    city: "",
+    imageUrl: ""
+};
 function AddProductPage() {
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     const user = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$src$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["getStoredUser"])();
-    const [form, setForm] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
-        name: "",
-        slug: "",
-        category: "",
-        productType: "",
-        description: "",
-        quantityAvailable: "",
-        unit: "",
-        price: "",
-        minOrderQuantity: "",
-        stockStatus: "in_stock",
-        deliveryOption: "",
-        deliveryArea: "",
-        expiryDate: "",
-        city: "",
-        imageUrl: ""
-    });
+    const [form, setForm] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(initialForm);
     const [imageMode, setImageMode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("url");
     const [imageFile, setImageFile] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [msg, setMsg] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
@@ -388,14 +393,24 @@ function AddProductPage() {
         if (imageMode === "upload" && imageFile) {
             return URL.createObjectURL(imageFile);
         }
-        if (imageMode === "url" && form.imageUrl.trim()) {
-            return form.imageUrl.trim();
+        if (imageMode === "url" && (form.imageUrl ?? "").trim()) {
+            return (form.imageUrl ?? "").trim();
         }
         return "";
     }, [
         imageMode,
         imageFile,
         form.imageUrl
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        return ()=>{
+            if (imageMode === "upload" && previewUrl.startsWith("blob:")) {
+                URL.revokeObjectURL(previewUrl);
+            }
+        };
+    }, [
+        imageMode,
+        previewUrl
     ]);
     const submit = async (e)=>{
         e.preventDefault();
@@ -421,13 +436,16 @@ function AddProductPage() {
             fd.append("deliveryArea", form.deliveryArea);
             fd.append("expiryDate", form.expiryDate);
             fd.append("city", form.city);
-            if (imageMode === "url" && form.imageUrl.trim()) {
-                fd.append("imageUrl", form.imageUrl.trim());
+            if (imageMode === "url" && (form.imageUrl ?? "").trim()) {
+                fd.append("imageUrl", (form.imageUrl ?? "").trim());
             }
             if (imageMode === "upload" && imageFile) {
                 fd.append("image", imageFile);
             }
             await __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$src$2f$lib$2f$api$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["productApi"].create(fd);
+            setForm(initialForm);
+            setImageFile(null);
+            setImageMode("url");
             router.push("/products/manage");
         } catch (e) {
             setMsg(e.message || "Failed to add product");
@@ -443,7 +461,7 @@ function AddProductPage() {
                 badge: "SELLER TOOLS"
             }, void 0, false, {
                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                lineNumber: 107,
+                lineNumber: 119,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$src$2f$components$2f$DashboardShell$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -454,7 +472,7 @@ function AddProductPage() {
                         children: "Only farmer, restaurant, and industrial accounts can add products."
                     }, void 0, false, {
                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                        lineNumber: 116,
+                        lineNumber: 128,
                         columnNumber: 13
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
                         className: "grid",
@@ -465,7 +483,7 @@ function AddProductPage() {
                                 children: msg
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                lineNumber: 121,
+                                lineNumber: 133,
                                 columnNumber: 23
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -478,12 +496,12 @@ function AddProductPage() {
                                                 children: "Product name"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 125,
+                                                lineNumber: 137,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 className: "input",
-                                                value: form.name,
+                                                value: form.name ?? "",
                                                 onChange: (e)=>setForm((prev)=>({
                                                             ...prev,
                                                             name: e.target.value,
@@ -493,13 +511,13 @@ function AddProductPage() {
                                                 required: true
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 126,
+                                                lineNumber: 138,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 124,
+                                        lineNumber: 136,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -509,27 +527,27 @@ function AddProductPage() {
                                                 children: "Slug"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 142,
+                                                lineNumber: 154,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 className: "input",
-                                                value: form.slug,
-                                                onChange: (e)=>setForm({
-                                                        ...form,
-                                                        slug: e.target.value
-                                                    }),
+                                                value: form.slug ?? "",
+                                                onChange: (e)=>setForm((prev)=>({
+                                                            ...prev,
+                                                            slug: e.target.value
+                                                        })),
                                                 placeholder: "potato",
                                                 required: true
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 143,
+                                                lineNumber: 155,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 141,
+                                        lineNumber: 153,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -539,27 +557,27 @@ function AddProductPage() {
                                                 children: "Category"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 153,
+                                                lineNumber: 167,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 className: "input",
-                                                value: form.category,
-                                                onChange: (e)=>setForm({
-                                                        ...form,
-                                                        category: e.target.value
-                                                    }),
+                                                value: form.category ?? "",
+                                                onChange: (e)=>setForm((prev)=>({
+                                                            ...prev,
+                                                            category: e.target.value
+                                                        })),
                                                 placeholder: "Vegetable",
                                                 required: true
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 154,
+                                                lineNumber: 168,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 152,
+                                        lineNumber: 166,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -569,26 +587,26 @@ function AddProductPage() {
                                                 children: "Product type"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 164,
+                                                lineNumber: 180,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 className: "input",
-                                                value: form.productType,
-                                                onChange: (e)=>setForm({
-                                                        ...form,
-                                                        productType: e.target.value
-                                                    }),
+                                                value: form.productType ?? "",
+                                                onChange: (e)=>setForm((prev)=>({
+                                                            ...prev,
+                                                            productType: e.target.value
+                                                        })),
                                                 placeholder: "Fresh"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 165,
+                                                lineNumber: 181,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 163,
+                                        lineNumber: 179,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -598,29 +616,29 @@ function AddProductPage() {
                                                 children: "Quantity available"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 174,
+                                                lineNumber: 195,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 className: "input",
                                                 type: "number",
                                                 min: "0",
-                                                value: form.quantityAvailable,
-                                                onChange: (e)=>setForm({
-                                                        ...form,
-                                                        quantityAvailable: e.target.value
-                                                    }),
+                                                value: form.quantityAvailable ?? "",
+                                                onChange: (e)=>setForm((prev)=>({
+                                                            ...prev,
+                                                            quantityAvailable: e.target.value
+                                                        })),
                                                 placeholder: "100",
                                                 required: true
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 175,
+                                                lineNumber: 196,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 173,
+                                        lineNumber: 194,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -630,27 +648,27 @@ function AddProductPage() {
                                                 children: "Unit"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 189,
+                                                lineNumber: 213,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 className: "input",
-                                                value: form.unit,
-                                                onChange: (e)=>setForm({
-                                                        ...form,
-                                                        unit: e.target.value
-                                                    }),
+                                                value: form.unit ?? "",
+                                                onChange: (e)=>setForm((prev)=>({
+                                                            ...prev,
+                                                            unit: e.target.value
+                                                        })),
                                                 placeholder: "kg",
                                                 required: true
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 190,
+                                                lineNumber: 214,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 188,
+                                        lineNumber: 212,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -660,7 +678,7 @@ function AddProductPage() {
                                                 children: "Price"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 200,
+                                                lineNumber: 226,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -668,22 +686,22 @@ function AddProductPage() {
                                                 type: "number",
                                                 min: "0",
                                                 step: "0.01",
-                                                value: form.price,
-                                                onChange: (e)=>setForm({
-                                                        ...form,
-                                                        price: e.target.value
-                                                    }),
+                                                value: form.price ?? "",
+                                                onChange: (e)=>setForm((prev)=>({
+                                                            ...prev,
+                                                            price: e.target.value
+                                                        })),
                                                 placeholder: "20",
                                                 required: true
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 201,
+                                                lineNumber: 227,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 199,
+                                        lineNumber: 225,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -693,28 +711,28 @@ function AddProductPage() {
                                                 children: "Minimum order quantity"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 214,
+                                                lineNumber: 242,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 className: "input",
                                                 type: "number",
                                                 min: "1",
-                                                value: form.minOrderQuantity,
-                                                onChange: (e)=>setForm({
-                                                        ...form,
-                                                        minOrderQuantity: e.target.value
-                                                    }),
+                                                value: form.minOrderQuantity ?? "",
+                                                onChange: (e)=>setForm((prev)=>({
+                                                            ...prev,
+                                                            minOrderQuantity: e.target.value
+                                                        })),
                                                 placeholder: "1"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 215,
+                                                lineNumber: 243,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 213,
+                                        lineNumber: 241,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -724,51 +742,51 @@ function AddProductPage() {
                                                 children: "Stock status"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 228,
+                                                lineNumber: 259,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
                                                 className: "select",
-                                                value: form.stockStatus,
-                                                onChange: (e)=>setForm({
-                                                        ...form,
-                                                        stockStatus: e.target.value
-                                                    }),
+                                                value: form.stockStatus ?? "in_stock",
+                                                onChange: (e)=>setForm((prev)=>({
+                                                            ...prev,
+                                                            stockStatus: e.target.value
+                                                        })),
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                         value: "in_stock",
                                                         children: "In stock"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                        lineNumber: 236,
-                                                        columnNumber: 17
+                                                        lineNumber: 270,
+                                                        columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                         value: "low_stock",
                                                         children: "Low stock"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                        lineNumber: 237,
-                                                        columnNumber: 17
+                                                        lineNumber: 271,
+                                                        columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
                                                         value: "out_of_stock",
                                                         children: "Out of stock"
                                                     }, void 0, false, {
                                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                        lineNumber: 238,
-                                                        columnNumber: 17
+                                                        lineNumber: 272,
+                                                        columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 229,
+                                                lineNumber: 260,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 227,
+                                        lineNumber: 258,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -778,26 +796,26 @@ function AddProductPage() {
                                                 children: "Delivery option"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 243,
+                                                lineNumber: 277,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 className: "input",
-                                                value: form.deliveryOption,
-                                                onChange: (e)=>setForm({
-                                                        ...form,
-                                                        deliveryOption: e.target.value
-                                                    }),
+                                                value: form.deliveryOption ?? "",
+                                                onChange: (e)=>setForm((prev)=>({
+                                                            ...prev,
+                                                            deliveryOption: e.target.value
+                                                        })),
                                                 placeholder: "Pickup / Delivery"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 244,
+                                                lineNumber: 278,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 242,
+                                        lineNumber: 276,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -807,26 +825,26 @@ function AddProductPage() {
                                                 children: "Delivery area"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 255,
+                                                lineNumber: 292,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 className: "input",
-                                                value: form.deliveryArea,
-                                                onChange: (e)=>setForm({
-                                                        ...form,
-                                                        deliveryArea: e.target.value
-                                                    }),
+                                                value: form.deliveryArea ?? "",
+                                                onChange: (e)=>setForm((prev)=>({
+                                                            ...prev,
+                                                            deliveryArea: e.target.value
+                                                        })),
                                                 placeholder: "Bara"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 256,
+                                                lineNumber: 293,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 254,
+                                        lineNumber: 291,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -836,26 +854,26 @@ function AddProductPage() {
                                                 children: "Expiry date"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 267,
+                                                lineNumber: 307,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 className: "input",
                                                 type: "date",
-                                                value: form.expiryDate,
-                                                onChange: (e)=>setForm({
-                                                        ...form,
-                                                        expiryDate: e.target.value
-                                                    })
+                                                value: form.expiryDate ?? "",
+                                                onChange: (e)=>setForm((prev)=>({
+                                                            ...prev,
+                                                            expiryDate: e.target.value
+                                                        }))
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 268,
+                                                lineNumber: 308,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 266,
+                                        lineNumber: 306,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -865,32 +883,32 @@ function AddProductPage() {
                                                 children: "City"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 279,
+                                                lineNumber: 322,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 className: "input",
-                                                value: form.city,
-                                                onChange: (e)=>setForm({
-                                                        ...form,
-                                                        city: e.target.value
-                                                    }),
+                                                value: form.city ?? "",
+                                                onChange: (e)=>setForm((prev)=>({
+                                                            ...prev,
+                                                            city: e.target.value
+                                                        })),
                                                 placeholder: "Bara"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 280,
+                                                lineNumber: 323,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 278,
+                                        lineNumber: 321,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                lineNumber: 123,
+                                lineNumber: 135,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -900,26 +918,26 @@ function AddProductPage() {
                                         children: "Description"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 290,
+                                        lineNumber: 335,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
                                         className: "textarea",
-                                        value: form.description,
-                                        onChange: (e)=>setForm({
-                                                ...form,
-                                                description: e.target.value
-                                            }),
+                                        value: form.description ?? "",
+                                        onChange: (e)=>setForm((prev)=>({
+                                                    ...prev,
+                                                    description: e.target.value
+                                                })),
                                         placeholder: "Fresh farm potato"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 291,
+                                        lineNumber: 336,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                lineNumber: 289,
+                                lineNumber: 334,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -936,7 +954,7 @@ function AddProductPage() {
                                         children: "Product image"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 300,
+                                        lineNumber: 350,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -947,7 +965,7 @@ function AddProductPage() {
                                         children: "Choose either image URL or local upload."
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 301,
+                                        lineNumber: 353,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -968,7 +986,7 @@ function AddProductPage() {
                                                 children: "Use image URL"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 306,
+                                                lineNumber: 365,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -984,13 +1002,13 @@ function AddProductPage() {
                                                 children: "Upload local image"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 317,
+                                                lineNumber: 378,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 305,
+                                        lineNumber: 357,
                                         columnNumber: 17
                                     }, this),
                                     imageMode === "url" ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1000,36 +1018,36 @@ function AddProductPage() {
                                                 children: "Add image URL"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 331,
-                                                columnNumber: 25
+                                                lineNumber: 394,
+                                                columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 className: "input",
                                                 type: "url",
-                                                value: form.imageUrl || "",
+                                                value: form.imageUrl ?? "",
                                                 onChange: (e)=>setForm((prev)=>({
                                                             ...prev,
-                                                            imageUrl: e.target.value || ""
+                                                            imageUrl: e.target.value ?? ""
                                                         })),
                                                 placeholder: "https://example.com/product.jpg"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 332,
-                                                columnNumber: 25
+                                                lineNumber: 395,
+                                                columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "muted",
                                                 children: "Use a direct image link ending in .jpg, .jpeg, .png, .webp, etc."
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 344,
-                                                columnNumber: 25
+                                                lineNumber: 407,
+                                                columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 330,
-                                        columnNumber: 21
+                                        lineNumber: 393,
+                                        columnNumber: 19
                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "field",
                                         children: [
@@ -1037,8 +1055,8 @@ function AddProductPage() {
                                                 children: "Upload image from computer"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 350,
-                                                columnNumber: 25
+                                                lineNumber: 413,
+                                                columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 className: "input",
@@ -1047,14 +1065,14 @@ function AddProductPage() {
                                                 onChange: (e)=>setImageFile(e.target.files?.[0] || null)
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 351,
-                                                columnNumber: 25
+                                                lineNumber: 414,
+                                                columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 349,
-                                        columnNumber: 21
+                                        lineNumber: 412,
+                                        columnNumber: 19
                                     }, this),
                                     previewUrl && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         style: {
@@ -1069,7 +1087,7 @@ function AddProductPage() {
                                                 children: "Preview"
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 361,
+                                                lineNumber: 425,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -1084,19 +1102,19 @@ function AddProductPage() {
                                                 }
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                                lineNumber: 362,
+                                                lineNumber: 426,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                        lineNumber: 360,
+                                        lineNumber: 424,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                lineNumber: 299,
+                                lineNumber: 349,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$farmlink_plus_full_project$2f$frontend$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1112,34 +1130,34 @@ function AddProductPage() {
                                     children: loading ? "Saving..." : "Save product"
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                    lineNumber: 378,
+                                    lineNumber: 442,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                                lineNumber: 377,
+                                lineNumber: 441,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                        lineNumber: 120,
+                        lineNumber: 132,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                    lineNumber: 114,
+                    lineNumber: 126,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-                lineNumber: 113,
+                lineNumber: 125,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/Downloads/farmlink_plus_full_project/frontend/src/app/products/add/page.tsx",
-        lineNumber: 106,
+        lineNumber: 118,
         columnNumber: 5
     }, this);
 }
